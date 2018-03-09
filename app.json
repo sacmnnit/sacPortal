@@ -1,0 +1,19 @@
+{
+  "name": "Student Activity Center Mnnit Allahabad",
+  "description": "SAC-18 | MNNIT",
+  "repository": "https://github.com/sacmnnit/sacPortal",
+  "keywords": ["sacmnnit", "MNNIT", "heroku sac"],
+  "success_url":"/",
+  "env":{
+    "DISABLE_COLLECTSTATIC":"1", 
+    "SECRET_KEY": {
+      "description": "A secret key for verifying the integrity of signed cookies.",
+      "generator": "secret"
+    },
+  },
+  "addons":[
+    {
+	    "plan":"heroku-postgresql"
+    }
+  ], 
+}
