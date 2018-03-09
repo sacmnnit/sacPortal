@@ -1,0 +1,147 @@
+{% extends "SacMnnit/base.html" %}
+{% load staticfiles %}
+
+{% block extra_head %}
+    <style type="text/css">
+    #ticker01 ul li {
+        color: black;
+    }
+</style>
+{% endblock extra_head %}
+
+
+{% block main %}        
+        <!--
+        ==================================================
+        Slider Section Start
+        ================================================== -->
+<section id="hero-area" >
+<div class="container">
+    <div class="row">
+        <!--
+        <div class="col-md-12 text-center">
+            <div class="block wow fadeInUp" data-wow-delay=".3s">
+              Slider -->
+               <!-- <section class="cd-intro">
+                    <h1 class="wow fadeInUp animated cd-headline slide" data-wow-delay=".4s" >
+                    <span class="cd-words-wrapper">STUDENT ACTIVITY CENTRE</span><br><br>
+
+                    </h1>
+                </section>  cd-intro -->
+                    <!-- /.slider 
+                    </div> -->
+                    <div class="col col-md-7 col-sm-7">
+
+                        <div id="carousel-area">   
+                          <div id="carousel-slider" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner" role="listbox">
+                              <div class="item active">
+                                <img src="{% static 'images/avishkar.jpg' %}" alt="" style="min-width: 100%; max-height:600px; opacity: 1.0;">
+                                <div class="carousel-caption">
+                                  <h2 class="wow fadeInRight type_slider" data-wow-delay="300ms">WOC 2018 - DevJam+CodeStart<br> Join us And Be There to hack the code</h2>
+                                  <div class="buttons wow fadeInDown" data-wow-delay="0.2s"><a class="btn btn-lg btn-border" href="https://weekendofcode.herokuapp.com/">Registration</a></div>
+                                  <a data-scroll href="#featured">
+                                      <div class="rev-scroll-btn wow fadeInUp" data-wow-delay="600ms">
+                                          <span></span>
+                                      </div>
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="item">
+                            <img src="{% static 'images/culrav.jpg' %}" alt="" style="min-width: 100%; max-height:600px;">
+                            <div class="carousel-caption">
+                              <h2 class="wow fadeInUp type_slider" data-wow-delay="300ms">Opportunity to showcase<br> your Hacks to World</h2>
+                              <div class="buttons">
+                                  <a class="btn btn-lg btn-common wow fadeInLeft" data-wow-delay="300ms" href="#gallery">Gallery</a>
+
+                                  <a class="btn btn-lg btn-border wow fadeInRight" data-wow-delay="300ms" href="#event">Know More</a>
+                              </div>
+                              <a data-scroll href="#featured">
+                                  <div class="rev-scroll-btn wow fadeInUp" data-wow-delay="600ms">
+                                      <span></span>
+                                  </div>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="item">
+                        <img src="{% static 'images/games.jpg' %}" alt="" style="min-width: 100%; max-height:600px;">
+                        <div class="carousel-caption">
+                          <h2 class="wow fadeInDown type_slider" data-wow-delay="300ms">Expert and Love to Speak? <br> Apply as Speaker for Taking Session</h2>
+                          <div class="wow fadeInUp" data-wow-delay="300ms"><a class="btn btn-lg btn-common" href="#contactForm">Apply Now</a></div>
+                          <a data-scroll href="#featured">
+                              <div class="rev-scroll-btn wow fadeInUp" data-wow-delay="600ms">
+                                  <span></span>
+                              </div>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+              <a class="left carousel-control" href="#carousel-slider" role="button" data-slide="prev">
+                <span class="icon-arrow-left" aria-hidden="true"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-slider" role="button" data-slide="next">
+                <span class="icon-arrow-right" aria-hidden="true"></span>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<div class="col col-md-3 col-sm-3 holder">
+    <h3 class="text-center" style="color: red;">Important Notices</h3>
+    <ul id="ticker01">
+        <li><span>10/10/2007</span>
+            <a href="#">The first thing that most Javascript programmers</a>
+        </li>
+        <li><span>10/10/2007</span>
+            <a href="#">End up doing is adding some code</a>
+        </li>
+        <li><span>10/10/2007</span><a href="#">The code that you want to run</a></li>
+        <li><span>08/10/2007</span><a href="#">Inside of which is the code that you want to run</a></li>
+        <li><span>08/10/2007</span><a href="#">Right when the page is loaded</a></li>
+        <li><span>05/10/2007</span><a href="#">Problematically, however, the Javascript code</a></li>
+        <li><span>04/10/2007</span><a href="#">The first thing that most Javascript programmers</a></li>
+        <li><span>04/10/2007</span><a href="#">End up doing is adding some code</a></li>
+        <li><span>04/10/2007</span><a href="#">The code that you want to run</a></li>
+        <li><span>03/10/2007</span><a href="#">Inside of which is the code that you want to run</a></li>
+        <li><span>03/10/2007</span><a href="#">Right when the page is loaded</a></li>
+        <li><span>01/10/2007</span><a href="#">Problematically, however, the Javascript code</a></li>
+    </ul>
+
+</div>
+
+</div>
+</div>
+</div>
+</section><!--/#main-slider-->
+<!--
+==================================================
+Slider Section Start
+================================================== -->
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6">
+                <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
+                    <h2>
+                        STUDENT ACTIVITY CENTRE
+                    </h2>
+                    <p>
+                     Now you are ready to combine your classes with original Bootstrap classes. For example, if you would like to create div element which behave like five columns layout on medium screens and like four columns on smaller ones, you just need to use something like this:
+
+                 </p>
+                 <p>
+                  Now you are ready to combine your classes with original Bootstrap classes. For example, if you would like to create div element which behave like five columns layout on medium screens and like four columns on smaller ones, you just need to use something like this:
+
+              </p>
+          </div>
+      </div>
+  </div>
+</div>
+</section>
+{% endblock main %}
+
+
+
+
+

@@ -1,0 +1,78 @@
+{% load staticfiles %}
+        <header id="top-bar" class="navbar-fixed-top animated-header">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- responsive nav button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <!-- /responsive nav button -->
+                    
+                    <!-- logo -->
+                    <div class="navbar-brand">
+                        <a href="{% url 'home' %}" >
+                            <img  style=" margin-top:-7px;"src="{% static 'images/logo.png' %}" alt="">
+                        </a>
+                    </div>
+
+
+                    <!-- /logo -->
+                </div>
+                <!-- main menu -->
+                <nav class="collapse navbar-collapse navbar-right" role="navigation" style="vertical-align:bottom">
+                    <div class="main-menu">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="{% url 'home' %}" >Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Events <span class="caret"></span></a>
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li><a href="{% url 'avishkar' %}">Avishkar</a></li>
+                                        <li><a href="{% url 'culrav' %}">Culrav</a></li>
+                                        <li><a href="{% url 'annual_athletics' %}">Annual Athletic Meet</a></li>
+                                        <li><a href="{% url 'josh' %}">Josh J Lal Memorial</a></li>
+                                        <li><a href="{% url 'eloquence' %}">Eloquence</a></li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Activities <span class="caret"></span></a>
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li><a href="{% url 'athletics' %}">Athletics</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="{% url 'literary' %}">Literary and Personality Development Activities</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="{% url 'technological' %}">Technological Activities</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="{% url 'cultural' %}">Cultural Activities</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="{% url 'classical' %}">Indian Classical Activities</a></li>
+                                    </ul>
+                                     <ul>
+                                        <li><a href="{% url 'games' %}">Games (Indoor and Outdoor)</a></li>
+                                    </ul>
+                                     <ul>
+                                        <li><a href="{% url 'yoga' %}">Yoga Activities</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="{% url 'downloads' %}">Downloads</a></li>
+                            <li><a href="{% url 'president' %}">SAC President</a></li>
+                            <li><a href="{% url 'contact' %}">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- /main nav -->
+            </div>
+        </header>
