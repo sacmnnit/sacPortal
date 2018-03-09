@@ -13,3 +13,7 @@ def games(request):
 
 def yoga(request): 
 	return render(request,'Athletics/yoga.html', {})
+
+def athletics(request): 
+	return render(request,'Athletics/athletics.html', {})
+
