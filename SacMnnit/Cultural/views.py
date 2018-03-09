@@ -3,7 +3,7 @@ from django.shortcuts import render
 # Create your views here.
 
 def culrav(request):
-	return render(request,'Culural/culrav.html', {})
+	return render(request,'Cultural/culrav.html', {})
 	
 def eloquence(request):
 	return render(request,'Cultural/eloquence.html', {})
