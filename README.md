@@ -2,7 +2,8 @@
 Student Activity center mnnit Allahabad <br>
 sacMnnit is responsible for organising various cultural and technical events in MNNIT.<br>
 Website - <br>
-https://sacmnnit.herokuapp.com <br>
+
+[SAC18 | MNNIT](https://sacmnnit.herokuapp.com) <br>
 
 <img src="./SacMnnit/static/images/slider.jpg">
 
