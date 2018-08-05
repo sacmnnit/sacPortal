@@ -141,24 +141,81 @@ a:hover {
 }
 
 #hero-area {
-  background: url('../images/slider.jpg') no-repeat 50%;
+  background: url('../images/slider2.jpg') no-repeat 50%;
   background-size: cover;
+  background-color:rgba(255, 255, 255, 0.75);
   background-attachment: fixed;
   padding: 230px 0;
-  color: #fff;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 1);
+  /*color: #fff;*/
+  /*box-shadow: 0 0 8px rgba(0, 0, 0, 1);*/
   position: relative;
-  opacity: 1.0;
+  opacity: 1;
 }
 #hero-area:before {
   content: '';
   z-index: 9;
-  background: rgba(255, 255, 255, 0.78);
+  background: rgba(255, 255, 255, 0);
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+}
+#hero-area-other {
+  background: url('../images/slider2.jpg') no-repeat 50%;
+  background-size: cover;
+  background-color:rgba(255, 255, 255, 0.75);
+  background-attachment: fixed;
+  padding: 230px 0;
+  /*color: #fff;*/
+  /*box-shadow: 0 0 8px rgba(0, 0, 0, 1);*/
+  position: relative;
+  opacity: 1;
+}
+#hero-area-other:before {
+  content: '';
+  z-index: 9;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#hero-area-other .block {
+  position: relative;
+  z-index: 999;
+}
+#hero-area-other h1 {
+  font-size: 50px;
+  line-height: 50px;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+#hero-area-other h2 {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 38px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #666;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 25px;
+}
+#hero-area-other .btn {
+  background: #414141;
+  border: none;
+  color: #fff;
+  padding: 20px 35px;
+  margin-top: 30px;
+  font-size: 16px;
+  font-size: 13px;
+  line-height: 1em;
+  text-transform: uppercase;
+  letter-spacing: normal;
+  border-radius: 0;
 }
 #hero-area .block {
   position: relative;
@@ -829,7 +886,7 @@ ul.social-icons li {
   margin-top: 30px;
 }
 .team-member:hover .team-img img {
-  opacity: .8;
+  opacity: 1.0;
 }
 .team-member .team-img {
   position: relative;

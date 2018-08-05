@@ -12,7 +12,7 @@ PROJECT_DIR = Path(__file__).parent
 
 #for local
 
-SECRET_KEY = os.environ['SECRET_KEY']
+SECRET_KEY = '(&yn&vabv-*qok27b=^m7xq5)o29!vitm%+$utrp300*ua+crj'#os.environ['SECRET_KEY']
 DEBUG = True # if you set it False then the allowed host must be saved to som port like 4 7 etc or just set it to all like ['*']
 DATABASES = {
     'default': {
@@ -42,8 +42,8 @@ ADMINS = (
   
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = os.environ['EMAIL_HOST_USER']
-EMAIL_HOST_PASSWORD = os.environ['EMAIL_HOST_PASSWORD']
+EMAIL_HOST_USER = 'abc@gmail.com'#os.environ['EMAIL_HOST_USER']
+EMAIL_HOST_PASSWORD = '123'#os.environ['EMAIL_HOST_PASSWORD']
 EMAIL_PORT = 587
 
 ''' 
