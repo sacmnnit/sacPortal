@@ -1,0 +1,21 @@
+
+module mynginx 1.0;
+
+require {
+	type httpd_t;
+	type user_home_t;
+	type init_t;
+	class sock_file write;
+	class unix_stream_socket connectto;
+	class capability2 block_suspend;
+}
+
+#============= httpd_t ==============
+
+#!!!! The file '/home/sac-admin/Desktop/sacPortal/sacPortal.sock' is mislabeled on your system.  
+#!!!! Fix with $ restorecon -R -v /home/sac-admin/Desktop/sacPortal/sacPortal.sock
+allow httpd_t init_t:unix_stream_socket connectto;
+allow httpd_t self:capability2 block_suspend;
+
+#!!!! This avc is allowed in the current policy
+allow httpd_t user_home_t:sock_file write;

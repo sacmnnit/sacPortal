@@ -20,7 +20,7 @@ DATABASES = {
         'NAME': PROJECT_DIR.child('db.sqlite3'),
     }
 } 
-ALLOWED_HOSTS = ['*']   
+ALLOWED_HOSTS = ['172.31.106.250']   
 
 #for local
 
@@ -36,7 +36,8 @@ ALLOWED_HOSTS = ['*']
 #end heroku
 
 ADMINS = (   
-    ('Deepak Bharti','wocmnnit@gmail.com'), 
+    ('WOC','wocmnnit@gmail.com'),
+    ('Deepak Bharti','deepakbharti823@gmail.com'),
     )
       
   
@@ -135,7 +136,7 @@ IPRESTRICT_GEOIP_ENABLED = False
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = PROJECT_DIR.child('SacMnnit','static_root')
+STATIC_ROOT = '/home/sac-admin/Desktop/sacPortal/SacMnnit/static_root/'
 # static_root is the server outside our project wher e static files are sent to store
 
 STATICFILES_DIRS = (
@@ -144,7 +145,7 @@ STATICFILES_DIRS = (
     )
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = PROJECT_DIR.child('SacMnnit','media_root')
+MEDIA_ROOT = '/home/sac-admin/Desktop/sacPortal/SacMnnit/media_root/'
 
 #Crispy forms tags settings
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
@@ -161,7 +162,7 @@ FILE_UPLOAD_TEMP_DIR = '/tmp/'
 FILE_UPLOAD_PERMISSIONS = 0o644
 
 #added to host on heroku
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 import netifaces
 

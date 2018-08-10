@@ -15,6 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf import settings
+from django.conf.urls import include, url
+from django.conf.urls.static import static  
 from SacMnnit.views import ( home,president,contact,downloads,contactmail )
 from Technical.views import ( avishkar,technological, )
 from Cultural.views import ( classical,culrav,literary,eloquence,cultural  )
@@ -47,6 +50,10 @@ urlpatterns = [
 
 
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL,
+document_root=settings.MEDIA_ROOT)
 
 
 
