@@ -20,7 +20,7 @@ DATABASES = {
         'NAME': PROJECT_DIR.child('db.sqlite3'),
     }
 } 
-ALLOWED_HOSTS = ['172.31.106.250']   
+ALLOWED_HOSTS = ['172.31.102.250','210.212.49.51', 'sac.mnnit.ac.in']
 
 #for local
 
@@ -43,8 +43,8 @@ ADMINS = (
   
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'abc@gmail.com'#os.environ['EMAIL_HOST_USER']
-EMAIL_HOST_PASSWORD = '123'#os.environ['EMAIL_HOST_PASSWORD']
+EMAIL_HOST_USER = 'wocmnnit@gmail.com'#os.environ['EMAIL_HOST_USER']
+EMAIL_HOST_PASSWORD = 'weekendofcode@mnnit'#os.environ['EMAIL_HOST_PASSWORD']
 EMAIL_PORT = 587
 
 ''' 
@@ -136,7 +136,7 @@ IPRESTRICT_GEOIP_ENABLED = False
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = '/home/sac-admin/Desktop/sacPortal/SacMnnit/static_root/'
+STATIC_ROOT = '/home/sac-dev/Desktop/sacPortal/SacMnnit/static_root/'
 # static_root is the server outside our project wher e static files are sent to store
 
 STATICFILES_DIRS = (
@@ -145,7 +145,7 @@ STATICFILES_DIRS = (
     )
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = '/home/sac-admin/Desktop/sacPortal/SacMnnit/media_root/'
+MEDIA_ROOT = '/home/sac-dev/Desktop/sacPortal/SacMnnit/media_root/'
 
 #Crispy forms tags settings
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
