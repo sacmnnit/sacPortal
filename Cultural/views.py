@@ -16,3 +16,6 @@ def cultural(request):
 	
 def classical(request): 
 	return render(request,'Cultural/classical.html', {})
+
+def mhrd(request): 
+	return render(request,'Cultural/mhrd.html', {})

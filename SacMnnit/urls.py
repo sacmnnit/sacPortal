@@ -20,7 +20,7 @@ from django.conf.urls import include, url
 from django.conf.urls.static import static  
 from SacMnnit.views import ( home,president,contact,downloads,contactmail )
 from Technical.views import ( avishkar,technological, )
-from Cultural.views import ( classical,culrav,literary,eloquence,cultural  )
+from Cultural.views import ( classical,culrav,literary,eloquence,cultural,mhrd )
 from Athletics.views import ( yoga,annual_athletics,josh,games,athletics )
 
 urlpatterns = [
@@ -35,7 +35,8 @@ urlpatterns = [
 	path('classical', classical, name='classical'), 
 	path('eloquence', eloquence, name='eloquence'),
 	path('cultural', cultural, name='cultural'),
-	
+	path('mhrd', mhrd, name='mhrd'),
+
 
 	path('josh', josh, name='josh'),
 	path('athletics', athletics, name='athletics'),
